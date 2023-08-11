@@ -41,7 +41,7 @@ app.use(cors({
 app.use(express.json())
 
 app.get("/", async (req, res) => {
-    res.json("welcome to blogs application")
+    res.json("welcome to Shopclues application")
 })
 
 
