@@ -7,7 +7,7 @@ const homepagefashionzoneRouter = Router();
 homepagefashionzoneRouter.get("/",async (req,res)=>{
 
     const homepagefashionzone = await HomepagefashionzoneModel.find()
-    res.json({homepagefashionzone:homepagefashionzone})
+    res.json(homepagefashionzone)
 })
 
 homepagefashionzoneRouter.post("/create",async(req,res)=>{

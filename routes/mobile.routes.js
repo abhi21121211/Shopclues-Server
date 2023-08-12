@@ -7,7 +7,7 @@ const mobileRouter = Router();
 mobileRouter.get("/",async (req,res)=>{
 
     const mobile = await MobileModel.find()
-    res.json({mobile:mobile})
+    res.json(mobile)
 })
 
 mobileRouter.post("/create",async(req,res)=>{

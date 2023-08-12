@@ -7,7 +7,7 @@ const homepagedealsofdayRouter = Router();
 homepagedealsofdayRouter.get("/",async (req,res)=>{
 
     const homepagedealsofday = await HomepagedealsofdayModel.find()
-    res.json({homepagedealsofday:homepagedealsofday})
+    res.json(homepagedealsofday)
 })
 
 homepagedealsofdayRouter.post("/create",async(req,res)=>{

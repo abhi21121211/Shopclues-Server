@@ -7,7 +7,7 @@ const homepagefestivalstoreRouter = Router();
 homepagefestivalstoreRouter.get("/",async (req,res)=>{
 
     const homepagefestivalstore = await HomepagefestivalstoreModel.find()
-    res.json({homepagefestivalstore:homepagefestivalstore})
+    res.json(homepagefestivalstore)
 })
 
 homepagefestivalstoreRouter.post("/create",async(req,res)=>{

@@ -7,7 +7,7 @@ const homepagegadgetstoreRouter = Router();
 homepagegadgetstoreRouter.get("/",async (req,res)=>{
 
     const homepagegadgetstore = await HomepagegadgetstoreModel.find()
-    res.json({homepagegadgetstore:homepagegadgetstore})
+    res.json(homepagegadgetstore)
 })
 
 homepagegadgetstoreRouter.post("/create",async(req,res)=>{

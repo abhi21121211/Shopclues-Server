@@ -7,7 +7,7 @@ const homepagesportsRouter = Router();
 homepagesportsRouter.get("/",async (req,res)=>{
 
     const homepagesports = await HomepagesportsModel.find()
-    res.json({homepagesports:homepagesports})
+    res.json(homepagesports)
 })
 
 homepagesportsRouter.post("/create",async(req,res)=>{

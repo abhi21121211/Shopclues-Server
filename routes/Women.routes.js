@@ -7,7 +7,7 @@ const womenRouter = Router();
 womenRouter.get("/",async (req,res)=>{
 
     const women = await WomenModel.find()
-    res.json({women:women})
+    res.json(women)
 })
 
 womenRouter.post("/create",async(req,res)=>{
